@@ -1,0 +1,210 @@
+.photo {
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Frivnefish.com%2Fplaces%2F668%2Futka&psig=AOvVaw3y3ELg75up2uSQZwJfjq97&ust=1732459152530000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIiu867Y8okDFQAAAAAdAAAAABAJ");
+}
+
+.centr {
+    text-align: center;
+}
+
+.shrift{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.size-p {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.size-h1 {
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.centrlphoto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline-style: solid;
+    outline-color: darkslategrey;
+    border-radius: 12px;
+}
+
+.div1 {
+    background-image: url("C:\Users\gigab\Desktop\fishing in Utka\bg.jpg");
+}
+
+body {
+    background-color:#bbab9b;
+    margin: 0;
+    padding: 0;
+}
+
+.centr1 {
+    background-color: rgb(228, 228, 228);
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    margin: 4px 2px;
+    text-decoration: none;
+    padding: 15px 32px;
+}
+
+.size-ph {
+    width: 30%;
+}
+
+.size-h2 {
+    font-size: 50px;
+}
+
+.a-but {
+    background-color: beige;
+}
+
+.centra {
+    align-items: center;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center
+  
+}
+  
+  a:hover, a:active {
+    background-color: green;
+    color: white;
+}
+
+/* Контейнер для зображень */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Дозволяє перенесення зображень на наступний рядок */
+    gap: 20px; /* Відстань між зображеннями */
+    justify-content: center; /* Вирівнювання зображень по центру */
+    padding: 20px;
+  }
+  
+  /* Зображення */
+  .clickable {
+    height: 200px; /* Фіксована висота для всіх зображень */
+    object-fit: cover; /* Обрізає зображення для збереження пропорцій */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px; /* Заокруглені кути */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тінь для зображень */
+  }
+  
+  /* Ефект при наведенні */
+.clickable:hover {
+    transform: scale(1.05); /* Легке збільшення при наведенні */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+  
+  /* Модальне вікно */
+.modal {
+    display: none; /* Спочатку приховане */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Темний напівпрозорий фон */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Контент модального вікна */
+  .modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Кнопка закриття */
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+.close:hover {
+    color: #ccc;
+  }
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 80%;
+    overflow: hidden; /* Приховує зайві зображення за межами контейнера */
+    background: #bbab9b;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+    display: flex;
+    transition: transform 0.3s ease-in-out; /* Плавний рух при скролі */
+    gap: 10px; /* Проміжок між зображеннями */
+}
+
+.gallery img {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+  
+  .gallery img:hover {
+    transform: scale(1.05); /* Легке збільшення при наведенні */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+/* Кнопки для скролу */
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    z-index: 10;
+    transition: background-color 0.2s;
+}
+  
+  .scroll-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+  .left-btn {
+    left: 10px;
+}
+  
+  .right-btn {
+    right: 10px;
+}
