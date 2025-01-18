@@ -208,3 +208,14 @@ a:link, a:visited {
   .right-btn {
     right: 10px;
 }
+
+.pro-mene {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    width: 600px;
+    margin: auto;
+    background-color: #9f9283;
+    border-radius: 20px;
+}
+
