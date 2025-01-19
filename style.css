@@ -228,3 +228,7 @@ a:link, a:visited {
     background-color: #9f9283;
     border-radius: 20px;
 }
+
+.cen{
+    text-align: center;
+}
